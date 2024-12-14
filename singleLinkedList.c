@@ -18,7 +18,6 @@ node *create(int val) {
     return n;
 }
 
-
 node *insert(node *head, int val) {
     node *newNode = malloc(sizeof(node));
     if (newNode == NULL) {
@@ -31,7 +30,7 @@ node *insert(node *head, int val) {
 }
 
 void output(node *list) {
-    static int count = 0; // Static ensures count persists across recursive calls
+    static int count = 0;
     if (list != NULL) {
         printf("%d\n", list->data);
         count++;
